@@ -25,6 +25,22 @@ int main()
     unsigned long long num13 = ULLONG_MAX + 1;
 
     printf("%u %u %u %llu\n", num10, num11, num12, num13);
+    
+    char a = CHAR_MIN -1;
+    short b = SHRT_MIN -1;
+    int c = INT_MIN -1;
+    long long d = LLONG_MIN -1;
+    
+   //부호 있는 정수에서 최솟값볻 작아지면 최댓값부터 다시 시작한다.  
+    printf("%d %d %d %lld\n", a, b, c, d);
+    
+    unsigned char e = 0-1;
+    unsigned short f = 0-1;
+    unsigned int g = 0-1;
+    unsigned long long h = 0-1;
+    
+    printf("%u %u %u %llu\n", e, f, g, h);
+    
 
     return 0;
 }
